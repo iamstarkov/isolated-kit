@@ -1,0 +1,20 @@
+{
+  "preset": [
+    "pedant"
+  ],
+  "plugins": [
+    "require-path-exists"
+  ],
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "jsx": true
+    }
+  }
+}
