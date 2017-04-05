@@ -1,5 +1,5 @@
 import initize from 'initize';
-import { theme } from '../../'
+import { theme } from '../'
 
 const defaultStyles = {
   direction: 'ltr',
