@@ -1,5 +1,6 @@
 import React from 'react';
-import { injectSheet, withTheme } from '../../';
+import hocs from '../../hocs/';
+const { withTheme, injectSheet} = hocs;
 
 const styles = {
   'alert': {

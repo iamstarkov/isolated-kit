@@ -1,10 +1,10 @@
-import components from './components';
+// import components from './components';
 import theme from './theme';
 import hocs from './hocs';
 import kitInitize from './kit-initize';
 
 const kit = Object.assign({},
-  components,
+  // components,
   { theme },
   hocs,
   { kitInitize }

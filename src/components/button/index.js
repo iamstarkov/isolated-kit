@@ -1,6 +1,9 @@
 import React, { PropTypes } from 'react';
+import hocs from '../../hocs/';
+const { withTheme, injectSheet} = hocs;
+
+
 import styles from './styles';
-import { withTheme, injectSheet } from '../../';
 
 const Button = ({
   classes,
