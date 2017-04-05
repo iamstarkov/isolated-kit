@@ -7,7 +7,7 @@ const kit = Object.assign({},
   components,
   { theme },
   hocs,
-  { kitInitize },
+  { kitInitize }
 );
 
 export default kit;

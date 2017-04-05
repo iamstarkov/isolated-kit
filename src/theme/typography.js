@@ -5,4 +5,4 @@ const typography = {
   lineHeight: 1.5,
 };
 
-export default ypography;
+export default typography;
