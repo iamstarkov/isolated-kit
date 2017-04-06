@@ -1,7 +1,9 @@
 import React, { PropTypes } from 'react';
+import cn from 'classnames';
 import hocs from '../../hocs/';
 const { withTheme, injectSheet} = hocs;
 
+console.log({ withTheme, injectSheet})
 
 import styles from './styles';
 
@@ -26,7 +28,7 @@ const Button = ({
   return (
     <Tag
       className={cn({
-        [classes.initize]: true,
+        // [classes.kitInitize]: true,
         [classes.button]: true,
         [classes[variant]]: !outline,
         [classes[variant+'-outline']]: outline,

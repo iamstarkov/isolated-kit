@@ -1,30 +1,34 @@
 import c from 'color';
-import { kitInitize, theme } from '../../';
+import kit from '../../';
 
-const vColor = (theme, x) => theme.colors.variant[x];
+const { kitInitize, theme } = kit;
+
+console.log({kitInitize, theme})
+
+const vColor = (theme, x) => theme.colors.variants[x];
 
 const variant = x => ({
-  backgroundColor: ({ theme }) => vColor(theme, x),
-  borderColor: ({ theme }) => x !== 'secondary' ? c(vColor(theme, x)).darken(0.1).hex() : '#ccc',
+  'background-color': ({ theme }) => vColor(theme, x),
+  'border-color': ({ theme }) => x !== 'secondary' ? c(vColor(theme, x)).darken(0.1).hex() : '#ccc',
   color: ({ theme }) => theme.colors[x !== 'secondary' ? 'white' : 'grayDark'],
   '&:not($active):not($disabled):hover': {
-    backgroundColor: ({ theme }) => c(vColor(theme, x)).darken(0.2).hex(),
+    'background-color': ({ theme }) => c(vColor(theme, x)).darken(0.2).hex(),
   },
   '&:not($active):not($disabled):active, &$active': {
-    backgroundColor: ({ theme }) => c(vColor(theme, x)).darken(0.3).hex(),
+    'background-color': ({ theme }) => c(vColor(theme, x)).darken(0.3).hex(),
   },
 });
 
 const variantOutline = x => ({
-  backgroundColor: ({ theme }) => theme.colors.white,
-  borderColor: ({ theme }) => x !== 'secondary' ? c(vColor(theme, x)).darken(0.1).hex() : '#ccc',
+  'background-color': ({ theme }) => theme.colors.white,
+  'border-color': ({ theme }) => x !== 'secondary' ? c(vColor(theme, x)).darken(0.1).hex() : '#ccc',
   color: ({ theme }) => x !== 'secondary' ? c(vColor(theme, x)).darken(0.1).hex() : '#ccc',
   '&:not($active):not($disabled):hover': {
-    backgroundColor: ({ theme }) => c(vColor(theme, x)).darken(0.2).hex(),
+    'background-color': ({ theme }) => c(vColor(theme, x)).darken(0.2).hex(),
     color: ({ theme }) => theme.colors[x !== 'secondary' ? 'white' : 'grayDark'],
   },
   '&:not($active):not($disabled):active, &$active': {
-    backgroundColor: ({ theme }) => c(vColor(theme, x)).darken(0.3).hex(),
+    'background-color': ({ theme }) => c(vColor(theme, x)).darken(0.3).hex(),
     color: ({ theme }) => theme.colors[x !== 'secondary' ? 'white' : 'grayDark'],
   },
 });

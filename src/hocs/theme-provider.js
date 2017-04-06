@@ -1,13 +1,13 @@
 import React, { PropTypes } from 'react';
 import withContext from 'recompose/withContext';
 
-function provideTheme(theme, child) {
-  return withContext(
-    { theme: PropTypes.object.isRequired },
-    () => ({ theme })
-  )(child);
-}
+const Provider = ({ children }) => children;
 
-const ThemeProvider = ({ theme, children }) => provideTheme(them, child);
+const provideTheme = withContext(
+  { theme: PropTypes.object.isRequired },
+  ({ theme }) => ({ theme })
+);
+
+const ThemeProvider = provideTheme(Provider)
 
 export default ThemeProvider;
