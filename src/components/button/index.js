@@ -21,7 +21,7 @@ const Button = ({
 }) => {
   const isInput = Tag === 'input';
   const isLink = Tag === 'a';
-  const iconComponent = <span className={cn({ [classes.icon]: true })} >✓</span>;
+  const iconComponent = <span className={cn({ [classes.icon]: icon })} >✓</span>;
   return (
     <Tag
       className={cn({
