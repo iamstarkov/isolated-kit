@@ -1,16 +1,16 @@
-## onClick
+### onClick
 
 ```
 <Button variant="primary" onClick={() => { alert('YOLO') }}>alert('YOLO')</Button>
 ```
 
-## icon
+### icon
 
 ```
 <Button variant="primary" icon>icon button</Button>
 ```
 
-## Variants
+### Variants
 
 ```
 <div>
@@ -30,7 +30,7 @@
 </div>
 ```
 
-## Tags
+### Tags
 
 ```
 <div>
@@ -46,7 +46,7 @@
 </div>
 ```
 
-## Outline
+### Outline
 
 ```
 <div>
@@ -66,7 +66,7 @@
 </div>
 ```
 
-## Size
+### Size
 
 ```
 <div>
@@ -78,7 +78,7 @@
 </div>
 ```
 
-## Block
+### Block
 
 ```
 <div>
@@ -88,7 +88,7 @@
 </div>
 ```
 
-## Active / Disabled
+### Active / Disabled
 
 ```
 <div>
