@@ -1,7 +1,5 @@
 # isolated-kit
 
-## Table of Content
-
 * [Install](#install)
 * [Getting-started](#getting-started)
 * [Usage](#usage)

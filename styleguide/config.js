@@ -9,7 +9,7 @@ module.exports = {
   title: 'Isolated Kit',
   sections: [
     {
-      name: 'Isolated Kit',
+      name: 'Table of Content',
       content: '../README.md'
     },
     {
