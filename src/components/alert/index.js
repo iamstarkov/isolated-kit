@@ -3,7 +3,7 @@ import c from 'color';
 import { withTheme, injectSheet} from '../../hocs/';
 
 const styles = {
-  'alert': {
+  alert: {
     padding: '.75em 1.25em',
     marginBottom: '1em',
     border: '1px solid transparent',
@@ -16,7 +16,7 @@ const styles = {
   }
 }
 
-const Alert = ({ classes, children }) => (
+export const Alert = ({ classes, children }) => (
   <div className={classes.alert}>
     { children }
   </div>
