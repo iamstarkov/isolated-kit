@@ -1,6 +1,6 @@
 import React from 'react';
 import c from 'color';
-import { withTheme, injectSheet} from '../../hocs/';
+import { withTheme, injectSheet} from '../../hocs';
 
 const styles = {
   alert: {
@@ -16,7 +16,7 @@ const styles = {
   }
 }
 
-export const Alert = ({ classes, children }) => (
+const Alert = ({ classes, children }) => (
   <div className={classes.alert}>
     { children }
   </div>

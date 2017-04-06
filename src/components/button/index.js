@@ -1,8 +1,6 @@
 import React, { PropTypes } from 'react';
 import cn from 'classnames';
-import { withTheme, injectSheet} from '../../';
-
-console.log({ withTheme, injectSheet})
+import { withTheme, injectSheet} from '../../hocs';
 
 import styles from './styles';
 
@@ -45,10 +43,12 @@ const Button = ({
       aria-pressed={ (isLink && active) ? true : null }
       aria-disabled={ (isLink && disabled) ? true : null }
     >
-      { !isInput
-        ? ( icon ? [ iconComponent, ' ' ] : [] ).concat(children)
-        : null
-      }
+      { isInput
+        ? null
+        : icon ? iconComponent : null }
+      { isInput
+        ? null
+        : children }
     </Tag>
   );
 };
@@ -111,6 +111,7 @@ Button.propTypes = {
 Button.defaultProps = {
   tag: 'button',
   type: 'button',
+  variant: 'primary',
   outline: false,
   size: 'm',
   block: false,

@@ -1,13 +1,15 @@
 // Components
-export { Alert } from './components';
-export { Button } from './components';
+import { Alert, Button } from './components';
+import theme from './theme';
+import { injectSheet, withTheme, ThemeProvider } from './hocs';
+import decorateShallow from './decorate-shallow';
+import kitInitize from './kit-initize';
 
-// theme
-export { default as theme } from './theme';
 
-// hocs
-export { injectSheet } from './hocs';
-export { withTheme } from './hocs';
-export { themeProvider } from './hocs';
-
-export { default as kitInitize } from './kit-initize';
+export {
+  Alert, Button,
+  theme,
+  injectSheet, withTheme, ThemeProvider,
+  decorateShallow,
+  kitInitize,
+}

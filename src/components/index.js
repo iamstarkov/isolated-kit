@@ -1,2 +1,7 @@
-export { default as Alert } from './alert';
-export { default as Button } from './button';
+import Alert from './alert';
+import Button from './button';
+
+export {
+  Alert,
+  Button,
+}

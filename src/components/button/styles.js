@@ -107,6 +107,13 @@ const styles = {
     fontSize: '.875rem',
     borderRadius: '.2rem',
   },
+
+  icon: {
+    display: 'inline-block',
+    width: '1rem',
+    height: '1rem',
+    color: 'white',
+  }
 }
 
 export default styles;
