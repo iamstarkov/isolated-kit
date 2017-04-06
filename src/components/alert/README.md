@@ -1,4 +1,4 @@
-# Alert
+## Basic
 
     <div>
       <Alert variant="success">

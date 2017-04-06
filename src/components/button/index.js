@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react';
 import cn from 'classnames';
-import hocs from '../../hocs/';
-const { withTheme, injectSheet} = hocs;
+import { withTheme, injectSheet} from '../../';
 
 console.log({ withTheme, injectSheet})
 

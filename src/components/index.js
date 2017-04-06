@@ -1,9 +1,2 @@
-import Alert from './alert';
-import Button from './button';
-
-const components = {
-  Alert,
-  Button,
-};
-
-export default components;
+export { default as Alert } from './alert';
+export { default as Button } from './button';

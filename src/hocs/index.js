@@ -1,11 +1,3 @@
-import injectSheet from './inject-sheet';
-import withTheme from './with-theme';
-import themeProvider from './theme-provider';
-
-const hocs = {
-  injectSheet,
-  withTheme,
-  themeProvider,
-}
-
-export default hocs;
+export { default as injectSheet } from './inject-sheet';
+export { default as withTheme } from './with-theme';
+export { default as themeProvider } from './theme-provider';

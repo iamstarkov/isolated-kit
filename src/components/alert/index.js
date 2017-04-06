@@ -1,7 +1,6 @@
 import React from 'react';
 import c from 'color';
-import hocs from '../../hocs/';
-const { withTheme, injectSheet} = hocs;
+import { withTheme, injectSheet} from '../../hocs/';
 
 const styles = {
   'alert': {

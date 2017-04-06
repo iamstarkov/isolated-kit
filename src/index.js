@@ -1,13 +1,13 @@
-// import components from './components';
-import theme from './theme';
-import hocs from './hocs';
-import kitInitize from './kit-initize';
+// Components
+export { Alert } from './components';
+export { Button } from './components';
 
-const kit = Object.assign({},
-  // components,
-  { theme },
-  hocs,
-  { kitInitize }
-);
+// theme
+export { default as theme } from './theme';
 
-export default kit;
+// hocs
+export { injectSheet } from './hocs';
+export { withTheme } from './hocs';
+export { themeProvider } from './hocs';
+
+export { default as kitInitize } from './kit-initize';

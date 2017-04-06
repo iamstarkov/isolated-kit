@@ -1,9 +1,5 @@
 import c from 'color';
-import kit from '../../';
-
-const { kitInitize, theme } = kit;
-
-console.log({kitInitize, theme})
+import { kitInitize, theme } from '../../';
 
 const vColor = (theme, x) => theme.colors.variants[x];
 
