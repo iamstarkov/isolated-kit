@@ -1,5 +1,7 @@
 # isolated-kit
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/iamstarkov/isolated-kit.svg)](https://greenkeeper.io/)
+
 * [Install](#install)
 * [Getting-started](#getting-started)
 * [Usage](#usage)
