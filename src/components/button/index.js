@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import cn from 'classnames';
-import { withTheme, injectSheet} from '../../hocs';
+import injectSheet, { withTheme } from 'react-jss';
 
 import styles from './styles';
 
