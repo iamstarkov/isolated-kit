@@ -1,5 +1,6 @@
 # isolated-kit
 
+* [react-jss/theming](#react-jss-theming)
 * [Install](#install)
 * [Getting-started](#getting-started)
 * [Usage](#usage)
@@ -16,6 +17,26 @@ npm install --save-dev isolated-kit
 # or
 yarn add isolated-kit
 ```
+
+## [react-jss/theming](#react-jss-theming)
+
+```sh
+git clone git@github.com:cssinjs/react-jss.git
+cd react-jss
+git checkout feat/theming
+npm install
+npm run build:lib
+npm link
+cd ..
+
+git clone git@github.com:iamstarkov/isolated-kit.git
+cd isolated-kit
+git checkout feat/react-jss-with-theming
+npm install
+npm link react-jss
+npm start
+```
+Open http://localhost:6060/ and look at `DynamicThemedBox` and `StaticThemedBox` components.
 
 ## [Getting Started](#getting-started)
 
