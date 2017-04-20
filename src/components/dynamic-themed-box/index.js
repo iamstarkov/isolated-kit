@@ -10,8 +10,8 @@ const styles = {
     borderRadius: '.25em',
     display: 'block',
     color: ({ theme }) => c(theme.colors.variants.success).darken(0.3).hex(),
-    'border-color': ({ theme }) => c(theme.colors.variants.success).lighten(0.4).hex(),
-    'background-color': ({ theme }) => c(theme.colors.variants.success).lighten(0.5).hex(),
+    borderColor: ({ theme }) => c(theme.colors.variants.success).lighten(0.4).hex(),
+    backgroundColor: ({ theme }) => c(theme.colors.variants.success).lighten(0.5).hex(),
     borderRadius: 10,
   }
 };

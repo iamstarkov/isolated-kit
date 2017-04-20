@@ -4,27 +4,27 @@ import { kitInitize, theme } from '../../';
 const vColor = (theme, x) => theme.colors.variants[x];
 
 const variant = x => ({
-  'background-color': ({ theme }) => vColor(theme, x),
-  'border-color': ({ theme }) => x !== 'secondary' ? c(vColor(theme, x)).darken(0.1).hex() : '#ccc',
+  backgroundColor: ({ theme }) => vColor(theme, x),
+  borderColor: ({ theme }) => x !== 'secondary' ? c(vColor(theme, x)).darken(0.1).hex() : '#ccc',
   color: ({ theme }) => theme.colors[x !== 'secondary' ? 'white' : 'grayDark'],
   '&:not($active):not($disabled):hover': {
-    'background-color': ({ theme }) => c(vColor(theme, x)).darken(0.2).hex(),
+    backgroundColor: ({ theme }) => c(vColor(theme, x)).darken(0.2).hex(),
   },
   '&:not($active):not($disabled):active, &$active': {
-    'background-color': ({ theme }) => c(vColor(theme, x)).darken(0.3).hex(),
+    backgroundColor: ({ theme }) => c(vColor(theme, x)).darken(0.3).hex(),
   },
 });
 
 const variantOutline = x => ({
-  'background-color': ({ theme }) => theme.colors.white,
-  'border-color': ({ theme }) => x !== 'secondary' ? c(vColor(theme, x)).darken(0.1).hex() : '#ccc',
+  backgroundColor: ({ theme }) => theme.colors.white,
+  borderColor: ({ theme }) => x !== 'secondary' ? c(vColor(theme, x)).darken(0.1).hex() : '#ccc',
   color: ({ theme }) => x !== 'secondary' ? c(vColor(theme, x)).darken(0.1).hex() : '#ccc',
   '&:not($active):not($disabled):hover': {
-    'background-color': ({ theme }) => c(vColor(theme, x)).darken(0.2).hex(),
+    backgroundColor: ({ theme }) => c(vColor(theme, x)).darken(0.2).hex(),
     color: ({ theme }) => theme.colors[x !== 'secondary' ? 'white' : 'grayDark'],
   },
   '&:not($active):not($disabled):active, &$active': {
-    'background-color': ({ theme }) => c(vColor(theme, x)).darken(0.3).hex(),
+    backgroundColor: ({ theme }) => c(vColor(theme, x)).darken(0.3).hex(),
     color: ({ theme }) => theme.colors[x !== 'secondary' ? 'white' : 'grayDark'],
   },
 });

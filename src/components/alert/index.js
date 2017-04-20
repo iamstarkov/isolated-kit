@@ -10,8 +10,8 @@ const styles = theme => ({
     borderRadius: '.25em',
     display: 'block',
     color: ({ variant }) => c(theme.colors.variants[variant] || theme.colors.grayDark).darken(0.3).hex(),
-    'border-color': ({ variant }) => c(theme.colors.variants[variant] || theme.colors.grayDark).lighten(0.4).hex(),
-    'background-color': ({ variant }) => c(theme.colors.variants[variant] || theme.colors.white).lighten(0.5).hex(),
+    borderColor: ({ variant }) => c(theme.colors.variants[variant] || theme.colors.grayDark).lighten(0.4).hex(),
+    backgroundColor: ({ variant }) => c(theme.colors.variants[variant] || theme.colors.white).lighten(0.5).hex(),
     borderRadius: 10,
   }
 });
