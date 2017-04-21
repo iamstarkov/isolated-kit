@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import cn from 'classnames';
-import injectSheet, { withTheme } from 'react-jss';
+import injectSheet from 'react-jss';
 
 import styles from './styles';
 
@@ -122,4 +122,4 @@ Button.defaultProps = {
   onClick: ()=>{},
 };
 
-export default withTheme(injectSheet(styles)(Button));
+export default injectSheet(styles)(Button);

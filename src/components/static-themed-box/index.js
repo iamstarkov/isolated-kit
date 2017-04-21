@@ -1,6 +1,6 @@
 import React from 'react';
 import c from 'color';
-import { injectThemedSheet } from 'react-jss';
+import injectSheet from 'react-jss';
 
 const styles = theme => ({
   alert: {
@@ -22,4 +22,4 @@ const StaticThemedBox = ({ classes, children }) => (
   </div>
 )
 
-export default injectThemedSheet(styles)(StaticThemedBox);
+export default injectSheet(styles)(StaticThemedBox);

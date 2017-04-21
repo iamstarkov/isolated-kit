@@ -1,6 +1,6 @@
 import React from 'react';
 import c from 'color';
-import injectSheet, { withTheme } from 'react-jss';
+import injectSheet from 'react-jss';
 
 const styles = {
   alert: {
@@ -22,4 +22,4 @@ const DynamicThemedBox = ({ classes, children }) => (
   </div>
 )
 
-export default withTheme(injectSheet(styles)(DynamicThemedBox));
+export default injectSheet(styles)(DynamicThemedBox);
