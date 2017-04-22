@@ -7,16 +7,17 @@ const componentName = (x='') => capitalize(path.dirname(x).split('/').pop());
 
 module.exports = {
   title: 'Isolated Kit',
-  sections: [
-    {
-      name: 'Table of Content',
-      content: '../README.md'
-    },
-    {
-      name: 'Components',
-      components: '../src/components/*/index.js',
-    }
-  ],
+  components: '../src/components/*/index.js',
+  // sections: [
+  //   {
+  //     name: 'Table of Content',
+  //     content: '../README.md'
+  //   },
+  //   {
+  //     name: 'Components',
+  //     components: '../src/components/*/index.js',
+  //   }
+  // ],
   webpackConfig: createConfig([
     babel(),
     resolveAliases({

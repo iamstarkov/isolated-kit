@@ -1,6 +1,6 @@
-import React, { PropTypes, Component } from 'react';
+import React from 'react';
+import { ThemeProvider } from 'react-jss';
 import theme from '../src/theme';
-import ThemeProvider from '../src/hocs/theme-provider';
 
 const Wrapper = ({ children }) => (
   <ThemeProvider theme={theme}>
