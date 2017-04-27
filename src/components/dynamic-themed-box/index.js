@@ -1,6 +1,6 @@
 import React from 'react';
 import c from 'color';
-import injectSheet from 'react-jss';
+import injectSheet, { withTheme } from 'react-jss';
 
 const styles = {
   alert: {
@@ -9,17 +9,22 @@ const styles = {
     border: '1px solid transparent',
     borderRadius: '.25em',
     display: 'block',
+    color: ({ theme }) => theme.color,
+    /*
     color: ({ theme }) => c(theme.colors.variants.success).darken(0.3).hex(),
-    borderColor: ({ theme }) => c(theme.colors.variants.success).lighten(0.4).hex(),
-    backgroundColor: ({ theme }) => c(theme.colors.variants.success).lighten(0.5).hex(),
+    borderColor: ({ theme }) =>
+      c(theme.colors.variants.success).lighten(0.4).hex(),
+    backgroundColor: ({ theme }) =>
+      c(theme.colors.variants.success).lighten(0.5).hex(),
+    */
     borderRadius: 10,
-  }
+  },
 };
 
 const DynamicThemedBox = ({ classes, children }) => (
   <div className={classes.alert}>
-    { children }
+    {children}
   </div>
-)
+);
 
-export default injectSheet(styles)(DynamicThemedBox);
+export default withTheme(injectSheet(styles)(DynamicThemedBox));

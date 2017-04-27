@@ -7,7 +7,9 @@
     "start": "styleguidist server --config styleguide/config.js",
     "docs": "styleguidist build --config styleguide/config.js",
     "test": "ava",
-    "tdd": "ava --watch"
+    "tdd": "ava --watch",
+    "build": "babel src -d dist",
+    "watch": "babel src -d dist -w"
   },
   "keywords": [],
   "author": "",
@@ -36,6 +38,7 @@
     "eslint": "^3.19.0",
     "eslint-config-pedant": "^0.8.0",
     "eslint-plugin-require-path-exists": "^1.1.5",
+    "othernpm": "^1.1.0",
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
@@ -48,6 +51,7 @@
     "initize": "iamstarkov/initize",
     "jss": "^6.5.0",
     "jss-preset-default": "^1.3.1",
+    "prop-types": "^15.5.8",
     "react-jss": "^5.4.1",
     "recompose": "^0.22.0"
   }

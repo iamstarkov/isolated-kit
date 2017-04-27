@@ -5,27 +5,28 @@ const vColor = (theme, x) => theme.colors.variants[x];
 
 const variant = x => ({
   backgroundColor: ({ theme }) => vColor(theme, x),
-  borderColor: ({ theme }) => x !== 'secondary' ? c(vColor(theme, x)).darken(0.1).hex() : '#ccc',
+  borderColor: ({ theme }) =>
+    (x !== 'secondary' ? c(vColor(theme, x)).darken(0.1).hex() : '#ccc'),
   color: ({ theme }) => theme.colors[x !== 'secondary' ? 'white' : 'grayDark'],
   '&:not($active):not($disabled):hover': {
-    backgroundColor: ({ theme }) => c(vColor(theme, x)).darken(0.2).hex(),
+    // backgroundColor: ({ theme }) => c(vColor(theme, x)).darken(0.2).hex(),
   },
   '&:not($active):not($disabled):active, &$active': {
-    backgroundColor: ({ theme }) => c(vColor(theme, x)).darken(0.3).hex(),
+    // backgroundColor: ({ theme }) => c(vColor(theme, x)).darken(0.3).hex(),
   },
 });
 
 const variantOutline = x => ({
-  backgroundColor: ({ theme }) => theme.colors.white,
-  borderColor: ({ theme }) => x !== 'secondary' ? c(vColor(theme, x)).darken(0.1).hex() : '#ccc',
-  color: ({ theme }) => x !== 'secondary' ? c(vColor(theme, x)).darken(0.1).hex() : '#ccc',
+  // backgroundColor: ({ theme }) => theme.colors.white,
+  // borderColor: ({ theme }) => x !== 'secondary' ? c(vColor(theme, x)).darken(0.1).hex() : '#ccc',
+  // color: ({ theme }) => x !== 'secondary' ? c(vColor(theme, x)).darken(0.1).hex() : '#ccc',
   '&:not($active):not($disabled):hover': {
-    backgroundColor: ({ theme }) => c(vColor(theme, x)).darken(0.2).hex(),
-    color: ({ theme }) => theme.colors[x !== 'secondary' ? 'white' : 'grayDark'],
+    // backgroundColor: ({ theme }) => c(vColor(theme, x)).darken(0.2).hex(),
+    // color: ({ theme }) => theme.colors[x !== 'secondary' ? 'white' : 'grayDark'],
   },
   '&:not($active):not($disabled):active, &$active': {
-    backgroundColor: ({ theme }) => c(vColor(theme, x)).darken(0.3).hex(),
-    color: ({ theme }) => theme.colors[x !== 'secondary' ? 'white' : 'grayDark'],
+    // backgroundColor: ({ theme }) => c(vColor(theme, x)).darken(0.3).hex(),
+    // color: ({ theme }) => theme.colors[x !== 'secondary' ? 'white' : 'grayDark'],
   },
 });
 
@@ -33,7 +34,7 @@ const size = x => ({
   padding: '.75rem 1.5rem',
   fontSize: '1.25rem',
   borderRadius: '.3rem',
-})
+});
 
 const styles = {
   kitInitize,
@@ -59,36 +60,36 @@ const styles = {
   active: {},
   disabled: {
     cursor: 'not-allowed',
-    opacity: .65,
+    opacity: 0.65,
   },
   link: {
     fontWeight: 'normal',
-    color: ({ theme }) => vColor(theme, 'primary'),
+    // color: ({ theme }) => vColor(theme, 'primary'),
     '&:not($disabled):hover': {
-      color: ({ theme }) => c(vColor(theme, 'primary')).darken(0.2).hex(),
-      textDecoration: 'underline',
+      //   color: ({ theme }) => c(vColor(theme, 'primary')).darken(0.2).hex(),
+      textDecoration: 'underline',
     },
-   },
-  'link-outline': {
-    color: ({ theme }) => vColor(theme, 'primary'),
-    '&:not($disabled):hover': {
-      color: ({ theme }) => c(vColor(theme, 'primary')).darken(0.2).hex(),
-      textDecoration: 'underline',
-    },
   },
-  primary:   variant('primary'),
+  'link-outline': {
+    //   color: ({ theme }) => vColor(theme, 'primary'),
+    '&:not($disabled):hover': {
+      //     color: ({ theme }) => c(vColor(theme, 'primary')).darken(0.2).hex(),
+      textDecoration: 'underline',
+    },
+  },
+  primary: variant('primary'),
   secondary: variant('secondary'),
-  success:   variant('success'),
-  info:      variant('info'),
-  warning:   variant('warning'),
-  danger:    variant('danger'),
+  success: variant('success'),
+  info: variant('info'),
+  warning: variant('warning'),
+  danger: variant('danger'),
 
-  'primary-outline':   variantOutline('primary'),
+  'primary-outline': variantOutline('primary'),
   'secondary-outline': variantOutline('secondary'),
-  'success-outline':   variantOutline('success'),
-  'info-outline':      variantOutline('info'),
-  'warning-outline':   variantOutline('warning'),
-  'danger-outline':    variantOutline('danger'),
+  'success-outline': variantOutline('success'),
+  'info-outline': variantOutline('info'),
+  'warning-outline': variantOutline('warning'),
+  'danger-outline': variantOutline('danger'),
 
   'size-l': {
     padding: '.75rem 1.5rem',
@@ -113,7 +114,7 @@ const styles = {
     width: '1rem',
     height: '1rem',
     color: 'white',
-  }
-}
+  },
+};
 
 export default styles;

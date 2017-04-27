@@ -3,8 +3,8 @@ import theme from '../theme';
 
 const defaultStyles = {
   direction: 'ltr',
-  color: theme.colors.grayDark,
-}
+  // color: theme.colors.grayDark,
+};
 
 const kitInitize = Object.assign({}, initize, defaultStyles);
 

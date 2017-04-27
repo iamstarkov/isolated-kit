@@ -2,8 +2,7 @@ import colors from './colors';
 import typography from './typography';
 
 const theme = {
-  colors,
-  typography,
-}
+  color: 'red',
+};
 
 export default theme;

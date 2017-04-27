@@ -4,7 +4,7 @@ import theme from '../src/theme';
 
 const Wrapper = ({ children }) => (
   <ThemeProvider theme={theme}>
-    { children }
+    {children}
   </ThemeProvider>
 );
 
